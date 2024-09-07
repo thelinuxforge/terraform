@@ -20,8 +20,7 @@ Cleanup: Use terraform destroy to clean up resources after they are no longer ne
 Decommissioning: It’s also used when decommissioning infrastructure or when starting over with a new configuration.
 Example:
 
-bash
-Copy code
+
 # Destroy all resources managed by the current Terraform configuration
 terraform destroy
 In summary, while Terraform as a tool is used to manage infrastructure throughout its lifecycle, from creation to updates, terraform destroy is specifically used to tear down that infrastructure when it’s no longer needed.

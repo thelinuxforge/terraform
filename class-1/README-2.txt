@@ -31,8 +31,7 @@ Options with terraform init:
 -input=false: Disables interactive prompts, making the command fully automated.
 
 Example Usage:
-bash
-Copy code
+
 # Initialize a Terraform working directory
 terraform init
 

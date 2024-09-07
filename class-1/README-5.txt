@@ -48,8 +48,7 @@ Understanding the Output of terraform plan
 The output of terraform plan is structured and color-coded (in terminals that support colors) for clarity:
 
 Example Output Structure:
-hcl
-Copy code
+
 An execution plan has been generated and is shown below.
 Resource actions are indicated with the following symbols:
   + create
@@ -132,31 +131,26 @@ Usage: terraform plan -detailed-exitcode
 Use Case: Useful in CI/CD pipelines to programmatically determine if changes are necessary.
 Example Usages
 Basic Plan:
-bash
-Copy code
+
 # Generate a plan and display it
 terraform plan
 Plan with Variables:
-bash
-Copy code
+
 # Generate a plan using variables from a file
 terraform plan -var-file=production.tfvars
 Save Plan to File:
-bash
-Copy code
+
 # Generate a plan and save it to a file
 terraform plan -out=plan.tfplan
 
 # Apply the saved plan
 terraform apply plan.tfplan
 Target Specific Resource:
-bash
-Copy code
+
 # Plan changes for a specific resource only
 terraform plan -target=aws_instance.example
 Destroy Plan:
-bash
-Copy code
+
 # Plan destruction of all resources
 terraform plan -destroy
 

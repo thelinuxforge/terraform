@@ -1,0 +1,2 @@
+create a folder called test-1
+Add a terraform to create a vpc called test-vpc with cidr_range: 192.168.0.0/16

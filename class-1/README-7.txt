@@ -22,8 +22,6 @@ Terraform can detect changes made to the infrastructure outside of Terraform (kn
 Example of a State File:
 A state file is typically in JSON format and might look something like this:
 
-json
-Copy code
 {
   "version": 4,
   "resources": [
