@@ -10,3 +10,7 @@ output "vpcarn" {
 output "vpccidr" {
   value = aws_vpc.main.cidr_block
 }
+
+output "vpcname" {
+  value = aws_vpc.main.tags.Name
+}

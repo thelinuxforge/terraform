@@ -23,7 +23,6 @@ resource "aws_instance" "ec2" {
 
 resource "aws_security_group" "webtraffic" {
     name                = "Allow HTTPS"
-
     dynamic "ingress" {
         iterator        = port
         for_each = var.ingressrule

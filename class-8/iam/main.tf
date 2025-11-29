@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_iam_user" "myUser" {
-    name = "LinuxForge"
+    name = "LinuxForge-1"
 }
 
 resource "aws_iam_policy" "customPolicy" {
@@ -19,7 +19,7 @@ resource "aws_iam_policy" "customPolicy" {
             "Action": [
                 "ec2:GetResourcePolicy",
                 "cloudfront:ListCloudFrontOriginAccessIdentities",
-                "cloudfront:ListFunctions"      
+                "cloudfront:ListFunctions"   
             ],
             "Resource": "*"
         }

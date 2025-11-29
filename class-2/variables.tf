@@ -32,13 +32,6 @@ variable inputname {
   description = "Name of the vpc"
   default = "myvpc"
 }
-
-
-variable "mytuple" {
-  type = tuple(string, number, string)
-  default = ["cat", 1, "dog"]
-  
-}
   
 variable "myobject" {
   type = object({ name = string, port = list(number) 

@@ -4,5 +4,6 @@ variable "environment" {
 
 variable "number_of_servers" {
     type = number
-    default = 2
 }
+
+

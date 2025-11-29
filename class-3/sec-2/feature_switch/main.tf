@@ -4,6 +4,7 @@ provider "aws" {
 
 # variable "number_of_servers" {
 #     type = number
+#     default = 2
 # }
 
 
@@ -14,3 +15,6 @@ resource "aws_instance" "ec2" {
     #count = var.number_of_servers
     count = var.environment == "prod" ? 2 : 0
 }
+
+
+#terraform apply -var-file=test.tfvars
