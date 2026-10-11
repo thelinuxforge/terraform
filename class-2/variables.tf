@@ -19,6 +19,11 @@ variable "mylist" {
   default = [ "value1", "value2" ]
 }
 
+variable "mylist1" {
+  type = set(string)
+  default = [ "value1", "value2" ]
+}
+
 variable "mymap" {
     type = map
     default = {
@@ -30,7 +35,13 @@ variable "mymap" {
 variable inputname {
   type = string
   description = "Name of the vpc"
-  default = "myvpc"
+
+}
+
+variable cidr_block {
+  type = string
+  description = "Name of the cidr"
+  
 }
   
 variable "myobject" {
@@ -41,6 +52,7 @@ variable "myobject" {
     port = [ 1, 1, 2 ]
   }
   }  
+
 
 
 

@@ -3,9 +3,10 @@ provider "aws" {
 }
 
 locals {
-  environment   = "dev"
-  app_name      = "myapp"
-  instance_name = "${local.app_name}-${local.environment}-ec2"
+  # environment   = "dev"
+  # app_name      = "myapp"
+  # instance_name = "${local.app_name}-${local.environment}-ec2"
+  instance_name = "${var.environment}-${var.app_name}-ec2"
 }
 
 # You need a valid AMI in us-east-1
@@ -17,4 +18,16 @@ resource "aws_instance" "example" {
   tags = {
     Name = local.instance_name
   }
+}
+
+
+variable "environment" {
+  type = string
+  default = "dev"
+}
+
+variable "app_name" {
+  type = string
+  default = "myapp"
+  
 }
